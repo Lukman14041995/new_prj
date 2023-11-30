@@ -5,18 +5,30 @@
             <a href="#" class="simple-text logo-normal">{{ __('Black ERP') }}</a>
         </div>
         <ul class="nav">
-            <li @if ($pageSlug == 'dashboard') class="active " @endif>
+            <li>
                 <a href="{{ route('home') }}">
                     <i class="tim-icons icon-chart-pie-36"></i>
                     <p>{{ __('Dashboard') }}</p>
                 </a>
             </li>
-            <li @if ($pageSlug == 'pelanggan') class="active " @endif>
+            <li>
+                <a href="{{ route('pages.mobil') }}">
+                    <i class="tim-icons icon-bus-front-12"></i>
+                    <p>{{ __('Mobil') }}</p>
+                </a>
+            </li>
+            <li>
+                <a href="{{ route('pages.icons') }}">
+                    <i class="tim-icons icon-atom"></i>
+                    <p>{{ __('Icons') }}</p>
+                </a>
+            </li>
+            {{-- <li @if ($pageSlug == 'pelanggan') class="active " @endif>
                 <a href="{{ route('user.index')  }}">
                     <i class="tim-icons icon-bullet-list-67"></i>
                     <p>{{ __('Data Penjualan') }}</p>
                 </a>
-            </li>
+            </li> --}}
             {{-- <li>
                 <a data-toggle="collapse" href="#laravel-examples" aria-expanded="true">
                     <i class="tim-icons icon-badge"></i>
@@ -41,12 +53,7 @@
                     </ul>
                 </div>
             </li> --}}
-            {{-- <li @if ($pageSlug == 'icons') class="active " @endif>
-                <a href="{{ route('pages.icons') }}">
-                    <i class="tim-icons icon-atom"></i>
-                    <p>{{ __('Icons') }}</p>
-                </a>
-            </li>
+            {{--
             <li @if ($pageSlug == 'maps') class="active " @endif>
                 <a href="{{ route('pages.maps') }}">
                     <i class="tim-icons icon-pin"></i>
@@ -59,12 +66,7 @@
                     <p>{{ __('Notifications') }}</p>
                 </a>
             </li>
-            <li @if ($pageSlug == 'tables') class="active " @endif>
-                <a href="{{ route('pages.tables') }}">
-                    <i class="tim-icons icon-puzzle-10"></i>
-                    <p>{{ __('Table List') }}</p>
-                </a>
-            </li>
+
             <li @if ($pageSlug == 'typography') class="active " @endif>
                 <a href="{{ route('pages.typography') }}">
                     <i class="tim-icons icon-align-center"></i>

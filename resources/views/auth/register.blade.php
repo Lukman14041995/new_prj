@@ -56,6 +56,33 @@
                             <input type="text" name="name" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Name') }}">
                             @include('alerts.feedback', ['field' => 'name'])
                         </div>
+                        <div class="input-group{{ $errors->has('alamat') ? ' has-danger' : '' }}">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="tim-icons icon-single-02"></i>
+                                </div>
+                            </div>
+                            <textarea name="alamat" class="form-control{{ $errors->has('alamat') ? ' is-invalid' : '' }}" placeholder="{{ __('Alamat') }}"></textarea>
+                            @include('alerts.feedback', ['field' => 'alamat'])
+                        </div>
+                        <div class="input-group{{ $errors->has('no_hp') ? ' has-danger' : '' }}">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="tim-icons icon-single-02"></i>
+                                </div>
+                            </div>
+                            <input type="text" name="no_hp" class="form-control{{ $errors->has('no_hp') ? ' is-invalid' : '' }}" placeholder="{{ __('Telp') }}">
+                            @include('alerts.feedback', ['field' => 'no_hp'])
+                        </div>
+                        <div class="input-group{{ $errors->has('no_sim') ? ' has-danger' : '' }}">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="tim-icons icon-single-02"></i>
+                                </div>
+                            </div>
+                            <input type="text" name="no_sim" class="form-control{{ $errors->has('no_sim') ? ' is-invalid' : '' }}" placeholder="{{ __('SIM') }}">
+                            @include('alerts.feedback', ['field' => 'no_sim'])
+                        </div>
                         <div class="input-group{{ $errors->has('email') ? ' has-danger' : '' }}">
                             <div class="input-group-prepend">
                                 <div class="input-group-text">
