@@ -8,11 +8,11 @@
             <div class="col-md-12">
                 <div class="card card-plain">
                     <div class="card-header card-header-primary">
-                        <h4 class="card-title mt-0"> Data Peminjaman</h4>
+                        <h4 class="card-title mt-0"> Data Pengembalian</h4>
                         <p class="card-category"> dan Ketersediaannya</p>
                     </div>
                     <div class="card-body">
-                        <a href="{{route('pages.peminjam')}}" class="btn btn-outline-success btn-outline-oke pull-right btn-sm"
+                        <a href="{{route('pages.kembalis')}}" class="btn btn-outline-success btn-outline-oke pull-right btn-sm"
                         style="margin-right: 1%">Tambah</a>
                         <div class="table-responsive">
                             <table class="table table-hover">
@@ -33,7 +33,10 @@
                                         Model
                                     </th>
                                     <th>
-                                        Tarif Perhari
+                                        Tanggal Pinjam
+                                    </th>
+                                    <th>
+                                        Aktual Kembali
                                     </th>
                                     <th>
                                         Total

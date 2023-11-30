@@ -45,7 +45,7 @@
 
                         </div>
                         <div class="card-footer">
-                            <a href="{{route('pages.mobil')}}" class="btn btn-fill btn-success" style="float: left;">Back</a>
+                            <a href="{{route('pages.peminjaman')}}" class="btn btn-fill btn-success" style="float: left;">Back</a>
                             <button type="submit" class="btn btn-fill btn-primary" style="float: right;">{{ __('Save') }}</button>
                         </div>
                     </form>

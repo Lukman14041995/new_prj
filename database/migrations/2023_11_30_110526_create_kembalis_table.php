@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePeminjamenTable extends Migration
+class CreateKembalisTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreatePeminjamenTable extends Migration
      */
     public function up()
     {
-        Schema::create('peminjamen', function (Blueprint $table) {
+        Schema::create('kembalis', function (Blueprint $table) {
             $table->id();
             $table->integer('user_id');
             $table->date('tanggal_pinjam');
-            $table->date('tanggal_kembali');
+            $table->date('aktual_kembali');
             $table->integer('tarif');
             $table->string('total');
             $table->integer('mobil_id');
@@ -32,6 +32,6 @@ class CreatePeminjamenTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('peminjamen');
+        Schema::dropIfExists('kembalis');
     }
 }

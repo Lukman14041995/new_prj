@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddColoumMobil extends Migration
+class AddStatusMobil extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class AddColoumMobil extends Migration
      */
     public function up()
     {
-        Schema::table('peminjamen', function (Blueprint $table) {
-            $table->integer('mobil_id')->change();
+        Schema::table('master_mobils', function (Blueprint $table) {
+            $table->string('status');
         });
     }
 

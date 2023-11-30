@@ -24,6 +24,12 @@
                 </a>
             </li>
             <li>
+                <a href="{{ route('pages.kembalian') }}">
+                    <i class="tim-icons icon-bus-front-12"></i>
+                    <p>{{ __('Pengembalian') }}</p>
+                </a>
+            </li>
+            <li>
                 <a href="{{ route('pages.icons') }}">
                     <i class="tim-icons icon-atom"></i>
                     <p>{{ __('Icons') }}</p>

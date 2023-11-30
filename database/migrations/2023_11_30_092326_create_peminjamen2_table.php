@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMasterMobilsTable extends Migration
+class CreatePeminjamen2Table extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,14 @@ class CreateMasterMobilsTable extends Migration
      */
     public function up()
     {
-        Schema::create('master_mobils', function (Blueprint $table) {
+        Schema::create('peminjamen', function (Blueprint $table) {
             $table->id();
-            $table->string('merk');
-            $table->string('model');
-            $table->string('nopol');
-            $table->string('tarif');
-            $table->string('status');
+            $table->integer('user_id');
+            $table->date('tanggal_pinjam');
+            $table->date('tanggal_kembali');
+            $table->integer('tarif');
+            $table->string('total');
+            $table->integer('mobil_id');
             $table->timestamps();
         });
     }
@@ -31,6 +32,6 @@ class CreateMasterMobilsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('master_mobils');
+        Schema::dropIfExists('peminjamen');
     }
 }
