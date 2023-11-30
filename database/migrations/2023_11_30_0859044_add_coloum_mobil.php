@@ -13,8 +13,8 @@ class AddColoumMobil extends Migration
      */
     public function up()
     {
-        Schema::table('master_mobils', function (Blueprint $table) {
-            $table->string('status')->nullable();
+        Schema::table('peminjamen', function (Blueprint $table) {
+            $table->integer('mobil_id')->change();
         });
     }
 

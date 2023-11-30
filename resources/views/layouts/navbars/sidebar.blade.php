@@ -18,6 +18,12 @@
                 </a>
             </li>
             <li>
+                <a href="{{ route('pages.peminjaman') }}">
+                    <i class="tim-icons icon-bus-front-12"></i>
+                    <p>{{ __('Peminjaman') }}</p>
+                </a>
+            </li>
+            <li>
                 <a href="{{ route('pages.icons') }}">
                     <i class="tim-icons icon-atom"></i>
                     <p>{{ __('Icons') }}</p>

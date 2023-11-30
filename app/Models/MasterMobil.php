@@ -13,4 +13,9 @@ class MasterMobil extends Model
     // protected $dates = ['deleted_at'];
 
     protected $fillable = ['merk', 'model', 'nopol', 'tarif','status'];
+
+    public function peminjamans()
+    {
+        return $this->hasMany(Peminjaman::class, 'mobil_id', 'id');
+    }
 }

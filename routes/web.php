@@ -35,6 +35,9 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('rtl', ['as' => 'pages.rtl', 'uses' => 'App\Http\Controllers\PageController@rtl']);
 	Route::get('tables', ['as' => 'pages.tables', 'uses' => 'App\Http\Controllers\PageController@tables']);
 	Route::get('mobil', ['as' => 'pages.mobil', 'uses' => 'App\Http\Controllers\MobilController@index']);
+	Route::get('peminjaman', ['as' => 'pages.peminjaman', 'uses' => 'App\Http\Controllers\PeminjamanController@cek']);
+	Route::get('peminjam', ['as' => 'pages.peminjam', 'uses' => 'App\Http\Controllers\PeminjamanController@pinjam']);
+	Route::post('transaksi', ['as' => 'pages.transaksi', 'uses' => 'App\Http\Controllers\PeminjamanController@transaksi']);
 	Route::get('mobil-create', ['as' => 'pages.mobil.create', 'uses' => 'App\Http\Controllers\MobilController@create']);
 
 	Route::post('mobil-store', ['as' => 'pages.mobil.store', 'uses' => 'App\Http\Controllers\MobilController@store']);
